@@ -5,7 +5,7 @@ import EventItem from "../EventItem"
 
 
 const Eventos = ({ searchTerm }) => {
-   const {events} = useEventsData();
+   const {events, isLoading, error} = useEventsData();
 
     const handleEventItemClick = (id) =>{
         console.log('Evento clickeado: ',id);
@@ -29,6 +29,15 @@ const Eventos = ({ searchTerm }) => {
             />
         ));
     };
+
+    if (error){
+return<div> Ha ocurrido un console.error();
+</div>
+    }
+
+    if (isLoading){
+        return <div> Cargando resultados...</div>
+    }
 
         return (
             <div>
