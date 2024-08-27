@@ -1,20 +1,18 @@
-import { useState } from 'react'
+import useEventsData from "../../hooks/useEventsData";
 
 import EventItem from "../EventItem"
-import eventsJSON from "../../data/events.json";
 
 
 
 const Eventos = ({ searchTerm }) => {
-    const [data] = useState(eventsJSON);
-    const dataEvento = data._embedded.events;
+   const {events} = useEventsData();
 
     const handleEventItemClick = (id) =>{
         console.log('Evento clickeado: ',id);
     };
 
     const renderEvents = () => {
-        let eventsFiltered = dataEvento;
+        let eventsFiltered = events;
 
         if(searchTerm.length>0){
             eventsFiltered = eventsFiltered.filter((item) => item.name.toLowerCase().includes(searchTerm));
