@@ -1,7 +1,7 @@
 import useEventsData from "../../hooks/useEventsData";
 
 import EventItem from "../EventItem"
-
+import styles from './Eventos.module.css'
 
 
 const Eventos = ({ searchTerm }) => {
@@ -41,7 +41,7 @@ return<div> Ha ocurrido un console.error();
 
         return (
             <div>
-                <p>Eventos</p>
+                <p className={titleEvents}>Eventos</p>
                 {renderEvents()}
             </div>
         );

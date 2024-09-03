@@ -1,0 +1,19 @@
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    background-color: black;
+}
+
+.navbarTitle{
+    font-size: 30px;
+   color:aliceblue;
+  margin-left: 30px;
+  padding:5px;
+}
+
+.navbarInput{
+    display:flex;
+    height:80%;
+    margin-right:30px;
+}
