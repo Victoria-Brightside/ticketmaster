@@ -41,7 +41,7 @@ return<div> Ha ocurrido un console.error();
 
         return (
             <div>
-                <p className={titleEvents}>Eventos</p>
+                <p className={styles.titleEvents}>Eventos</p>
                 {renderEvents()}
             </div>
         );
