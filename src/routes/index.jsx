@@ -7,16 +7,18 @@ import {
 
 import Home from "../views/Home"
 import Detail from "../views/Detail"
+import Error404 from "../views/Error404";
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: < Home />
+        element: < Home />, 
+        errorElement: <Error404 />
     },
     {
-        path: '/detail',
-        element: < Detail />
-    }
+        path: '/detail/:eventId',
+        element: <Detail />
+    },
 ]);
 
 
