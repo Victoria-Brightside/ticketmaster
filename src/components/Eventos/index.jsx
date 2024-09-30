@@ -6,9 +6,9 @@ import EventItem from "../EventItem"
 import styles from './Eventos.module.css'
 
 
-const Eventos = ({ searchTerm }) => {
-   const {events, isLoading, error} = useEventsData();
+const Eventos = ({ searchTerm, events }) => {
 const navigate = useNavigate();
+
 
     const handleEventItemClick = (id) =>{
         navigate(`/detail/${id}`);
@@ -32,15 +32,6 @@ const navigate = useNavigate();
             />
         ));
     };
-
-    if (error){
-return<div> Ha ocurrido un console.error();
-</div>
-    }
-
-    if (isLoading){
-        return <div> Cargando resultados...</div>
-    }
 
         return (
             <div>
