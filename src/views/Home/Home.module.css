@@ -1,9 +1,8 @@
-.pagination{
+.pagination {
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
 }
 
 .page {
@@ -16,14 +15,24 @@
 .previous,
 .next {
     font-size: 20px;
-    cursor:pointer;
+    cursor: pointer;
 
 }
 
-.previous{
+.previous {
     margin-right: 8px;
 }
 
 .next {
     margin-left: 8px;
 }
+
+.activePage {
+background-color: #ffffff;
+color: #000;
+border-radius: 20px;
+}
+
+.disabledPage{
+    cursor: not-allowed;
+    }

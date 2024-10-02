@@ -22,6 +22,7 @@ const Home = () => {
 
     const handlePageClick = ({ selected }) => {
         console.log(selected);
+        fetchEvents(`&keyword=${searchTerm}&page=${selected}`)
     };
 
     const renderEvents = () => {
@@ -37,8 +38,12 @@ const Home = () => {
             <div>
                 <Eventos searchTerm={searchTerm} events={events} />
                 <ReactPaginate
-                    className={styles.pagination}
+                    containerClassName={styles.pagination}
                     nextClassName={styles.next}
+                    previousClassName={styles.previous}
+                    pageClassName={styles.page}
+                    activeClassName={styles.activePage}
+                    disabledClassName={styles.disabledPage}
                     breakLabel="..."
                     nextLabel=" >"
                     onPageChange={handlePageClick}
