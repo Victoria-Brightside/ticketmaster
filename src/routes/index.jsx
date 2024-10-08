@@ -12,6 +12,7 @@ import Profile from "../views/Profile";
 import Info from "../views/Info";
 import Liked from "../views/Liked";
 
+
 const router = createBrowserRouter([
     {
         path: '/',
@@ -27,8 +28,8 @@ const router = createBrowserRouter([
         element: <Profile />,
         children: [
             {
-path: 'my-info',
-element: <Info/>
+                path: 'my-info',
+                element: <Info />
             }, {
                 path: 'liked-events',
                 element: <Liked />
