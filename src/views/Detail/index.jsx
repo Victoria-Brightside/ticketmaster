@@ -29,15 +29,6 @@ const Detail = () => {
         fetchEventData();
     }, []);
 
-    if (isLoading && Object.keys(eventData) === 0) {
-        return <div> Cargando evento ..</div>
-    }
-    if (Object.keys(error)) {
-        return <div> Ha ocurrido un error </div>
-    }
-
-    console.log(Object.keys(eventData));
-    console.log(eventData);
     return (
         <div className={styles.container}>
             <div className={styles.mainInfoContainer}>
