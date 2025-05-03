@@ -1,8 +1,18 @@
-# React + Vite
+# Ticketmaster App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ticketmaster App es una aplicación web desarrollada con **React** que permite explorar, buscar y gestionar eventos de forma interactiva utilizando la API de Ticketmaster.
 
-Currently, two official plugins are available:
+## Características Principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Exploración de Eventos**: Interfaz que consume la API de Ticketmaster para mostrar una lista actualizada de eventos.
+- **Detalle de Evento**: Vista dedicada con información detallada de cada evento, accedida mediante rutas dinámicas.
+- **Paginación**: Navegación eficiente de eventos usando `react-paginate`.
+- **Manejo de Errores**: Ruta comodín que redirige a una página personalizada 404 cuando la ruta no es reconocida.
+
+## Tecnologías Usadas
+
+- React – Biblioteca principal para construir la interfaz.
+- React Router DOM – Manejo de rutas incluyendo rutas anidadas.
+- React Paginate – Para implementar paginación en la lista de eventos.
+- Vite – Herramienta de desarrollo y build ultrarrápida.
+- GitHub Pages – Para el despliegue estático del sitio.
