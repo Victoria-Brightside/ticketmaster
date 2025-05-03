@@ -40,7 +40,7 @@ const router = createBrowserRouter([
 ]);
 
 
-const MyRoutes = () => <RouterProvider router={router} />;
+const MyRoutes = () => <RouterProvider router={router} basename='/ticketmaster/'/>;
 
 
 export default MyRoutes;
