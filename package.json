@@ -1,9 +1,9 @@
 {
+  "homepage": "https://Victoria-Brightside.github.io/ticketmaster",
   "name": "ticketmaster",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Victoria-Brightside.github.io.com/ticketmaster",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
