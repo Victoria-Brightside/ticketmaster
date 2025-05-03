@@ -2,18 +2,43 @@
     display: flex;
     justify-content: space-between;   
     align-items: center;
-    background-color: black;
+    background-color: #1a1a1a; 
+    padding: 15px 30px; 
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .navbarTitle{
-    font-size: 30px;
-   color:aliceblue;
-  margin-left: 30px;
-  padding:5px;
+    font-size: 32px; 
+    color: #f0f8ff; 
+    margin-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía moderna */
+    font-weight: bold;
 }
 
 .navbarInput{
-    display:flex;
-    height:80%;
-    margin-right:30px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px; 
+        width: 300px; 
+        border-radius: 20px; 
+        padding-left: 15px;
+        background-color: #f0f8ff; 
+        border: 1px solid #444; 
+        transition: all 0.3s ease-in-out; 
+}
+
+.navbarInput:hover {
+    background-color: #e4e3e3; 
+    border-color: #888; 
+}
+
+.navbarInput input::placeholder {
+    color: #bbb; 
+    font-style: italic; 
+}
+
+.navbarInput input:focus {
+    border-color: #00bcd4;
 }

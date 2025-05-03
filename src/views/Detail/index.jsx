@@ -41,7 +41,13 @@ const Detail = () => {
                 <h6 className={styles.seatMapTitle}>Mapa del evento</h6>
                 <img src={eventData.seatmap?.staticUrl} alt="Seatmap event" />
                 <p className={styles.pleaseNoteLegend}>{eventData.pleaseNote}</p>
-                <p className={styles.priceRangeLegend}>Rango de precios: {eventData.priceRanges?.[0].min}-{eventData.priceRanges?.[0].max} {eventData.priceRanges?.[0].currency}</p>
+                {eventData.priceRanges?.[0] ? (
+                    <p className={styles.priceRangeLegend}>
+                        Rango de precios: {eventData.priceRanges[0].min} - {eventData.priceRanges[0].max} {eventData.priceRanges[0].currency}
+                    </p>
+                ) : (
+                    <p className={styles.priceRangeLegend}>Rango de precios no disponible</p>
+                )}
             </div>
             <a href={eventData.url}>
                 Ir por tus boletos

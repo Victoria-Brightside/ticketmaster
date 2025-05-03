@@ -20,7 +20,7 @@ search,
 
     return (
         <div ref={ref} className='navbarContainer'>
-            <p className='navbarTitle'>Mi ticketmaster</p>
+            <p className='navbarTitle'>Mi Ticketmaster</p>
             <input
                 placeholder="Busca tu evento favorito"
                 onChange={handleInputChange}

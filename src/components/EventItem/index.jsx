@@ -9,7 +9,7 @@ const EventItem = ({ info, id, name, image, onEventClick }) => {
 
     return (
         <div className={styles.eventItemContainer}>
-            <img src={image} alt={name} width={200} height={200} />
+            <img src={image} alt={name}  />
             <div className={styles.eventInfoContainer}>
                 <h4 className={styles.eventName}>{name}</h4>
                 <p className={styles.eventInfo}>{info}</p>

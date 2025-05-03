@@ -2,31 +2,67 @@
     display: flex;
     margin: 24px 0px;
     align-items: start;
+
+    gap: 16px;
+    padding: 16px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.eventItemContainer:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .eventInfoContainer {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    margin-left: 14px;
+    align-items: flex-start;
+    flex: 1;
 }
 
 .eventName {
     margin: 0;
-    font-size: 22px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
 }
 
 .eventInfo {
+    margin-top: 8px;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
     text-align: justify;
-    margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
 }
 
 .seeMoreBtn {
-    margin: 8px;
-   
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
+
+.seeMoreBtn:hover {
+    background-color: #005ea6;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
